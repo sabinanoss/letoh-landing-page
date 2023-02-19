@@ -1,0 +1,64 @@
+// COLORS
+
+$color-primary-light: #8ecae6;
+$color-primary-medium: #219ebc;
+$color-primary-dark: #023047;
+
+$color-secondary-light: #fdd85d;
+$color-secondary-medium: #fdc921;
+$color-secondary-dark: #ffb703;
+
+$color-grey-light-1: #ccc;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$color-white: #fff;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-dark-1: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+$shadow-dark-2: 0 1rem 4rem rgba(0, 0, 0, 0.06);
+
+$line: 1px solid $color-grey-light-2;
+$white-line: 3px solid $color-white;
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+   @media only screen and (max-width: $bp-large) {
+      font-size: 50%;
+   }
+}
+
+body {
+   font-family: "Quicksand", sans-serif;
+   font-weight: 400;
+   line-height: 1.6;
+   color: $color-grey-dark-1;
+   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-medium);
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   min-height: 100vh;
+}
